@@ -1,0 +1,7 @@
+FROM node:17.4.0-stretch
+WORKDIR /app
+COPY ./package*.json ./
+RUN npm install
+COPY . .
+EXPOSE 800
+ENTRYPOINT ["node","server.js"]
