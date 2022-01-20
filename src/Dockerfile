@@ -1,4 +1,4 @@
-FROM node:17.4.0-stretch
+FROM node:14.18.3-buster-slim
 WORKDIR /app
 COPY ./package*.json ./
 RUN npm install
